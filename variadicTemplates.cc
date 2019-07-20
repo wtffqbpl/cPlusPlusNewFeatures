@@ -11,7 +11,7 @@ void print()
 template <typename T, typename... Types>
 void print(const T& firstArg, const Types&... args)
 {
-    cout << firstArg << endl;
+    cout << "First Arg: " << firstArg << " Sizeof(args): " << sizeof...(args) << endl;
     print(args...);
 }
 
